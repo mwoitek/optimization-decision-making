@@ -1,0 +1,158 @@
+:PROPERTIES:
+:UNNUMBERED: notoc
+:END:
+
+#+AUTHOR: Marcio Woitek
+#+TITLE: Quiz: Giapetto's Woodcarving Company
+#+LATEX_HEADER: \usepackage[a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+#+LATEX_HEADER: \usepackage[american]{babel}
+#+LATEX_HEADER: \usepackage{enumitem}
+#+LATEX_HEADER: \usepackage{float}
+#+LATEX_HEADER: \usepackage[sc]{mathpazo}
+#+LATEX_HEADER: \linespread{1.05}
+#+LATEX_HEADER: \renewcommand{\labelitemi}{$\rhd$}
+#+LATEX_HEADER: \setlength\parindent{0pt}
+#+LATEX_HEADER: \setlist[itemize]{leftmargin=*}
+#+LATEX_HEADER: \setlist{nosep}
+#+OPTIONS: ':t
+#+OPTIONS: author:nil
+#+OPTIONS: date:nil
+#+OPTIONS: title:nil
+#+OPTIONS: toc:nil
+#+STARTUP: hideblocks
+
+#+BEGIN_SRC latex
+\thispagestyle{empty}
+\pagestyle{empty}
+#+END_SRC
+
+* Problem 1
+
+*Answer:* 2\\
+
+There are two decision variables, \( x_1 \) and \( x_2 \). \( x_1 \) denotes the
+number of toy soldiers produced, and \( x_2 \) denotes the number of toy trains
+produced.
+
+* Problem 2
+
+*Answer:* \( \$ 3 \)\\
+
+The cost of producing a toy soldier is \( \$ 24 \) (materials + labor). Since a
+soldier sells for \( \$ 27 \), the profit margin is \( \$ 3 \).
+
+* Problem 3
+
+*Answer:* \( \$ 2 \)\\
+
+The cost of producing a toy train is \( \$ 19 \) (materials + labor). Since a
+train sells for \( \$ 21 \), the profit margin is \( \$ 2 \).
+
+* Problem 4
+
+*Answer:*
+\begin{equation*}
+\max\quad Z=3x_1+2x_2
+\end{equation*}
+#+BEGIN_SRC latex
+\vspace{0.1cm}
+#+END_SRC
+Producing \( x_1 \) soldiers generates a profit of \( 3x_1 \). Similarly,
+producing \( x_2 \) trains generates a profit of \( 2x_2 \). Then the total
+profit is \( Z=3x_1+2x_2 \). The goal is to maximize profit. Therefore, Giapetto
+needs to find \( \max Z \).
+
+* Problem 5
+
+*Answer:* 3\\
+
+There are three constraints:
+- one that specifies the upper bound for the number of finishing hours;
+- one that specifies the upper bound for the number of carpentry hours;
+- one that specifies the upper bound for the number of toy soldiers.
+
+* Problem 6
+
+*Answer:* \( 2x_1+x_2\leq 100 \)\\
+
+To produce \( x_1 \) soldiers, \( 2x_1 \) hours of finishing labor are required.
+Similarly, to produce \( x_2 \) trains, \( x_2 \) hours of finishing labor are
+required. Then the total number of finishing hours is \( 2x_1+x_2 \). We know
+this number is at most 100 hours. Hence:
+\begin{equation*}
+2x_1+x_2\leq 100.
+\end{equation*}
+
+* Problem 7
+
+*Answer:* \( x_1+x_2\leq 80 \)\\
+
+To produce \( x_1 \) soldiers, \( x_1 \) hours of carpentry labor are required.
+Similarly, to produce \( x_2 \) trains, \( x_2 \) hours of carpentry labor are
+required. Then the total number of carpentry hours is \( x_1+x_2 \). We know
+this number is at most 80 hours. Hence:
+\begin{equation*}
+x_1+x_2\leq 80.
+\end{equation*}
+
+* Problem 8
+
+*Answer:* No\\
+
+Actually, it's not necessary to plot the feasible region. We can answer this
+question by using the constraints directly. For \( x_1=40 \) and \( x_2=30 \),
+we have
+\begin{align*}
+2x_1+x_2&=2\cdot 40+30\\
+&=80+30\\
+&=110.
+\end{align*}
+This shows that the constraint \( 2x_1+x_2\leq 100 \) is not satisfied.
+Therefore, the point under consideration is *not* in the feasible region.
+
+* Problem 9
+
+*Answer:* \( (x_1=20,x_2=60) \)\\
+
+The plot clearly shows that the solution corresponds to the point \( G \). This
+point lies in the intersection between the lines defined by the following
+equations:
+\begin{align*}
+2x_1+x_2&=100,\\
+x_1+x_2&=80.
+\end{align*}
+Using the second equation, we can express \( x_2 \) as
+\begin{equation*}
+x_2=80-x_1.
+\end{equation*}
+Next, we substitute this result into the first equation, and solve for \( x_1 \):
+\begin{align*}
+2x_1+x_2&=100\\
+2x_1+80-x_1&=100\\
+x_1+80&=100\\
+x_1&=100-80\\
+x_1&=20
+\end{align*}
+Hence:
+\begin{equation*}
+x_2=80-20=60.
+\end{equation*}
+Therefore, the optimal solution is given by \( (x_1,x_2)=(20,60) \). Notice that
+this result is consistent with what is shown in the graph.
+
+* Problem 10
+
+*Answer:* \( \$ 180 \)\\
+
+According to the graph, this value is \( Z=180 \). Just to be sure, let's use
+the optimal solution to compute the maximum profit:
+\begin{align*}
+Z&=3x_1+2x_2\\
+&=3\cdot 20+2\cdot 60\\
+&=60+120\\
+&=180.
+\end{align*}
+
+# Local Variables:
+# ispell-alternate-dictionary: "american"
+# End:
