@@ -1,0 +1,186 @@
+% Created 2024-07-01 Mon 01:16
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+\usepackage[american, english]{babel}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}
+\renewcommand{\labelitemi}{$\rhd$}
+\setlength\parindent{0pt}
+\setlist[itemize]{leftmargin=*}
+\setlist{nosep}
+\date{}
+\title{Quiz: Dorian Auto Manufacturer}
+\hypersetup{
+ pdfauthor={Marcio Woitek},
+ pdftitle={Quiz: Dorian Auto Manufacturer},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.8)}, 
+ pdflang={English}}
+\begin{document}
+
+\thispagestyle{empty}
+\pagestyle{empty}
+\section*{Problem 1}
+\label{sec:org88ebc8c}
+
+\textbf{Answer:} 2\\
+
+There are two decision variables, \(x_1\) and \(x_2\). \(x_1\) denotes the
+number of 1-min comedy ads purchased, and \(x_2\) denotes the number of 1-min
+football ads purchased.
+\section*{Problem 2}
+\label{sec:org02eaf4f}
+
+\textbf{Answer:}
+\begin{equation*}
+\min\quad Z=50x_1+100x_2
+\end{equation*}
+\vspace{0.1cm}
+
+\(x_1\) 1-min comedy ads are purchased. The corresponding cost is \(50x_1\).
+Similarly, the cost of \(x_2\) 1-min football ads is \(100x_2\). Then the
+total cost can be expressed as \(Z=50x_1+100x_2\). The goal is to minimize
+this cost. This means we need to find \(\min Z\).
+\section*{Problem 3}
+\label{sec:org590794a}
+
+\textbf{Answer:} 2\\
+
+There are two constraints:
+\begin{itemize}
+\item one specifying the minimum number of high-income women that need to be reached;
+\item one specifying the minimum number of high-income men that need to be reached.
+\end{itemize}
+\section*{Problem 4}
+\label{sec:orgb8ba64c}
+
+\textbf{Answer:} \(7x_1+2x_2\geq 28\)\\
+
+\(x_1\) comedy ads will be seen by \(7,000,000x_1\) high-income women.
+Similarly, \(x_2\) football ads will be seen by \(2,000,000x_2\) high-income
+women. In total, \(7,000,000x_1+2,000,000x_2\) such women will be reached.
+Since we want this number to be at least 28,000,000, the following must hold:
+\begin{align*}
+  7,000,000x_1+2,000,000x_2&\geq 28,000,000\\
+  7x_1+2x_2&\geq 28
+\end{align*}
+\section*{Problem 5}
+\label{sec:orgbb88d98}
+
+\textbf{Answer:} \(2x_1+12x_2\geq 24\)\\
+
+\(x_1\) comedy ads will be seen by \(2,000,000x_1\) high-income men.
+Similarly, \(x_2\) football ads will be seen by \(12,000,000x_2\)
+high-income men. In total, \(2,000,000x_1+12,000,000x_2\) such men will be
+reached. Since we want this number to be at least 24,000,000, the following must
+hold:
+\begin{align*}
+  2,000,000x_1+12,000,000x_2&\geq 24,000,000\\
+  2x_1+12x_2&\geq 24
+\end{align*}
+\section*{Problem 6}
+\label{sec:org2919656}
+
+\textbf{Answer:} \((4,0)\) and \((0,14)\)\\
+
+Actually, to answer this question, no plot is necessary. We can simply check
+whether the points satisfy the line equation we were given. Clearly, one of the
+points is \((4,0)\):
+\begin{align*}
+  7x_1+2x_2&=7\cdot 4+2\cdot 0\\
+  &=28+0\\
+  &=28.
+\end{align*}
+The other point is \((0,14)\), since
+\begin{align*}
+  7x_1+2x_2&=7\cdot 0+2\cdot 14\\
+  &=0+28\\
+  &=28.
+\end{align*}
+\section*{Problem 7}
+\label{sec:org022b47d}
+
+\textbf{Answer:} \((12,0)\) and \((0,2)\)\\
+
+Actually, to answer this question, no plot is necessary. We can simply check
+whether the points satisfy the line equation we were given. Clearly, one of the
+points is \((12,0)\):
+\begin{align*}
+  2x_1+12x_2&=2\cdot 12+12\cdot 0\\
+  &=24+0\\
+  &=24.
+\end{align*}
+The other point is \((0,2)\), since
+\begin{align*}
+  2x_1+12x_2&=2\cdot 0+12\cdot 2\\
+  &=0+24\\
+  &=24.
+\end{align*}
+\section*{Problem 8}
+\label{sec:orge1322c1}
+
+\textbf{Answer:} This problem has an unbounded feasible region.\\
+
+In this case, a plot would help. But it is given to us in the next question. So
+I see no point in re-creating this plot. The image in problem 9 clearly shows
+that the feasible region is unbounded. I could have reached the same conclusion
+by looking at the constraints. After all, there is no constraint that specifies
+an upper bound.
+\section*{Problem 9}
+\label{sec:orgea6bbe4}
+
+\textbf{Answer:} \(\$ 320\mathrm{k}\)\\
+
+The graph shows that the optimal solution corresponds to the point \(E\). This
+point lies in the intersection of the following lines:
+\begin{align*}
+  7x_1+2x_2&=28,\\
+  2x_1+12x_2&=24.
+\end{align*}
+Next, we use the second equation to derive an expression for \(x_1\):
+\begin{align*}
+  2x_1+12x_2&=24\\
+  x_1+6x_2&=12\\
+  x_1&=12-6x_2
+\end{align*}
+The next step is to substitute this result into the first line equation:
+\begin{align*}
+  7x_1+2x_2&=28\\
+  7(12-6x_2)+2x_2&=28\\
+  84-42x_2+2x_2&=28\\
+  -40x_2&=-56\\
+  40x_2&=56\\
+  5x_2&=7\\
+  x_2&=\frac{7}{5}\\
+  x_2&=1.4
+\end{align*}
+Hence:
+\begin{equation*}
+x_1=12-6x_2=12-6\cdot 1.4=3.6.
+\end{equation*}
+Therefore, the optimal value of the cost is
+\begin{equation}
+Z^{*}=50\cdot 3.6+100\cdot 1.4=320.
+\end{equation}
+Recall that the unit of \(Z\) is \(\$ 1,000\). Then the minimum cost is
+\(\$ 320,000\). Notice that this is the same value shown in the plot.
+\section*{Problem 10}
+\label{sec:org1182645}
+
+\textbf{Answer:} All of the above
+\end{document}
