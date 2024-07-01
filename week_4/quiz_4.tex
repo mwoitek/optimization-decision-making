@@ -1,0 +1,124 @@
+% Created 2024-07-01 Mon 20:47
+% Intended LaTeX compiler: pdflatex
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{wrapfig}
+\usepackage{rotating}
+\usepackage[normalem]{ulem}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{capt-of}
+\usepackage{hyperref}
+\usepackage[a4paper,left=1cm,right=1cm,top=1cm,bottom=1cm]{geometry}
+\usepackage[american, english]{babel}
+\usepackage{enumitem}
+\usepackage{float}
+\usepackage[sc]{mathpazo}
+\linespread{1.05}
+\renewcommand{\labelitemi}{$\rhd$}
+\setlength\parindent{0pt}
+\setlist[itemize]{leftmargin=*}
+\setlist{nosep}
+\date{}
+\title{Quiz: A Medical Device Example}
+\hypersetup{
+ pdfauthor={Marcio Woitek},
+ pdftitle={Quiz: A Medical Device Example},
+ pdfkeywords={},
+ pdfsubject={},
+ pdfcreator={Emacs 29.4 (Org mode 9.8)}, 
+ pdflang={English}}
+\begin{document}
+
+\thispagestyle{empty}
+\pagestyle{empty}
+\section*{Problem 1}
+\label{sec:orge3a5f91}
+
+\textbf{Answer:} 3\\
+
+There are three decision variables, \(x_1\), \(x_2\) and \(x_3\). The
+variable \(x_i\) corresponds to the number of pig valves purchased from the
+\(i\)-th supplier.
+\section*{Problem 2}
+\label{sec:orge7857ab}
+
+\textbf{Answer:} \(0.4x_1+0.3x_2+0.2x_3\geq 500\)\\
+
+In total, \(x_1\) valves are purchased from supplier 1. In this case, the
+number of large valves is 40\% of the total. Then \(0.4x_1\) large valves are
+purchased from supplier 1. A similar argument allows us to conclude that
+\begin{itemize}
+\item \(0.3x_2\) large valves are purchased from supplier 2, and
+\item \(0.2x_3\) large valves are purchased from supplier 3.
+\end{itemize}
+Therefore, the total number of large valves can be expressed as
+\(0.4x_1+0.3x_2+0.2x_3\). At least 500 such valves need to be purchased every
+month. Hence the following must hold:
+\begin{equation}
+0.4x_1+0.3x_2+0.2x_3\geq 500.
+\end{equation}
+\section*{Problem 3}
+\label{sec:org4c5cbda}
+
+\textbf{Answer:} \(0.4x_1+0.35x_2+0.2x_3\geq 300\)\\
+
+In total, \(x_1\) valves are purchased from supplier 1. In this case, the
+number of medium valves is 40\% of the total. Then \(0.4x_1\) medium valves are
+purchased from supplier 1. A similar argument allows us to conclude that
+\begin{itemize}
+\item \(0.35x_2\) medium valves are purchased from supplier 2, and
+\item \(0.2x_3\) medium valves are purchased from supplier 3.
+\end{itemize}
+Therefore, the total number of medium valves can be expressed as
+\(0.4x_1+0.35x_2+0.2x_3\). At least 300 such valves need to be purchased every
+month. Hence the following must hold:
+\begin{equation}
+0.4x_1+0.35x_2+0.2x_3\geq 300.
+\end{equation}
+\section*{Problem 4}
+\label{sec:org897f3c7}
+
+\textbf{Answer:} \(0.2x_1+0.35x_2+0.6x_3\geq 300\)\\
+
+In total, \(x_1\) valves are purchased from supplier 1. In this case, the
+number of small valves is 20\% of the total. Then \(0.2x_1\) small valves are
+purchased from supplier 1. A similar argument allows us to conclude that
+\begin{itemize}
+\item \(0.35x_2\) small valves are purchased from supplier 2, and
+\item \(0.6x_3\) small valves are purchased from supplier 3.
+\end{itemize}
+Therefore, the total number of small valves can be expressed as
+\(0.2x_1+0.35x_2+0.6x_3\). At least 300 such valves need to be purchased every
+month. Hence the following must hold:
+\begin{equation}
+0.2x_1+0.35x_2+0.6x_3\geq 300.
+\end{equation}
+\section*{Problem 5}
+\label{sec:orgb9bd321}
+
+\textbf{Answer:} Decision variables
+\section*{Problem 6}
+\label{sec:orgee350ec}
+
+\textbf{Answer:} Objective function coefficients
+\section*{Problem 7}
+\label{sec:org0bacb2d}
+
+\textbf{Answer:} Constraint function coefficients
+\section*{Problem 8}
+\label{sec:orgd33200f}
+
+\textbf{Answer:} \texttt{SUMPRODUCT(\$B\$4:\$D\$4,B10:D10)}
+\section*{Problem 9}
+\label{sec:org752ce50}
+
+\textbf{Answer:} All of the above
+\section*{Problem 10}
+\label{sec:orgb01e82e}
+
+\textbf{Answer:} \(\$ 6450\)
+\end{document}
